@@ -5,12 +5,15 @@
 //  Created by Varindra Hart on 9/25/15.
 //  Copyright © 2015 Varindra Hart. All rights reserved.
 //
+#pragma mark INFO
+//  MAIN DETAIL VIEW CONTROLLER
 
 #import "MapAndLabelsViewController.h"
 #import "DetailViewController.h"
+#import "WebViewController.h"
 @import GoogleMaps;
 
-@interface MapAndLabelsViewController ()<UIWebViewDelegate>
+@interface MapAndLabelsViewController ()<UIWebViewDelegate, UIAlertViewDelegate>
 
 @property (nonatomic) IBOutlet UIView *viewForMap;
 @property (nonatomic) GMSPlacePicker *placePicker;
@@ -69,6 +72,8 @@
     
     [self.activityIndicator startAnimating];
     
+    if ([self hasUrl]) {
+        
     NSString *encodeString = [self.entry.menuUrl stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     
     NSMutableURLRequest * request =[NSMutableURLRequest requestWithURL:[NSURL URLWithString:encodeString]];
@@ -93,7 +98,14 @@
          
      }];
 
+    }
     
+    else{
+        
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Uh oh!" message:@"It seems they don't have a mobile menu!" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        [alert show];
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -130,10 +142,37 @@
     
 }
 
+- (BOOL)hasUrl{
+    
+    if ([self.entry.menuUrl isEqualToString:@""] || self.entry.menuUrl == nil) {
+        return NO;
+    }
+    
+    return YES;
+}
+
+#pragma mark UIAlertView Delegate
+- (void)alertView:(UIAlertView *)alertView didDismissWithButtonIndex:(NSInteger)buttonIndex{
+    
+    [self rightBarButtonTapped:self.rightBarButton];
+    
+}
+
+
 #pragma mark UIWebView Delegate
 - (void)webViewDidFinishLoad:(UIWebView *)webView{
     [self.activityIndicator stopAnimating];
     self.activityIndicator.hidden = YES;
+}
+
+#pragma mark PrepareForSegue
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if ([segue.identifier isEqualToString:@"webViewSegue"]) {
+        WebViewController *webVC = segue.destinationViewController;
+        webVC.url = self.entry.url;
+    }
+    
 }
 
 //- (void)googlePlacesData{

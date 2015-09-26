@@ -35,7 +35,7 @@ NSString * const foursquareURL = @"https://api.foursquare.com/v2/venues/search?c
     self.tableView.delegate   = self;
     self.tableView.dataSource = self;
     self.searchField.delegate = self;
-    
+    self.navigationItem.title = @"Food Finder";
     self.currentSearch = @"pizza";
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
@@ -108,6 +108,7 @@ NSString * const foursquareURL = @"https://api.foursquare.com/v2/venues/search?c
 - (void)fetchData{
     NSString *foursquareURLmod = [NSString stringWithFormat:@"https://api.foursquare.com/v2/venues/search?client_id=WKKKR2YZPIZCDILZ4GN5NBAY0YYN4DF3P2S4PQY5SSC2K5VN&client_secret=PYK0IPHF5KS1ALSD4TSOQWDKWIGAINV3II2T3E2IF5WPGZR1&v=20130815&ll=%f,%f&radius=1000&query=%@",self.locationManager.location.coordinate.latitude, self.locationManager.location.coordinate.longitude,self.currentSearch];
     NSString *encodeString = [foursquareURLmod stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    NSLog(@"%@",encodeString);
     
     [APImanager GETRequestWithUrl:[NSURL URLWithString:encodeString] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
         if(data!=nil){

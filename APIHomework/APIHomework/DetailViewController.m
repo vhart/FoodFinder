@@ -5,6 +5,14 @@
 //  Created by Varindra Hart on 9/24/15.
 //  Copyright © 2015 Varindra Hart. All rights reserved.
 //
+
+
+
+#pragma mark INFO
+//This ViewController is for the GOOGLEMAP, which had to be embedded in the
+//MapAndLabelsViewController
+
+
 @import GoogleMaps;
 #import "DetailViewController.h"
 

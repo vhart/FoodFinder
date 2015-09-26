@@ -22,6 +22,7 @@
 		C7213ACD1BB4AFC9004F572D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7213ACC1BB4AFC9004F572D /* DetailViewController.m */; };
 		C7213AD01BB4B035004F572D /* FourSquareEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = C7213ACF1BB4B035004F572D /* FourSquareEntry.m */; };
 		C7213AD31BB5E5CE004F572D /* MapAndLabelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7213AD21BB5E5CE004F572D /* MapAndLabelsViewController.m */; };
+		C7213AD61BB6EE42004F572D /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7213AD51BB6EE41004F572D /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +49,8 @@
 		C7213A921BB4A028004F572D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C7213A941BB4A028004F572D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C7213A951BB4A028004F572D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C7213A971BB4A028004F572D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C7213A981BB4A028004F572D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C7213A971BB4A028004F572D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = APIHomework/ViewController.h; sourceTree = "<group>"; };
+		C7213A981BB4A028004F572D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = APIHomework/ViewController.m; sourceTree = "<group>"; };
 		C7213A9B1BB4A028004F572D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7213A9D1BB4A028004F572D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7213AA01BB4A028004F572D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,12 +65,14 @@
 		C7213AC61BB4A34E004F572D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C7213AC81BB4A57C004F572D /* APImanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APImanager.h; path = ../../ItunesAPIPlayground/ItunesAPIPlayground/APImanager.h; sourceTree = "<group>"; };
 		C7213AC91BB4A57C004F572D /* APImanager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = APImanager.m; path = ../../ItunesAPIPlayground/ItunesAPIPlayground/APImanager.m; sourceTree = "<group>"; };
-		C7213ACB1BB4AFC9004F572D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		C7213ACC1BB4AFC9004F572D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		C7213ACB1BB4AFC9004F572D /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = APIHomework/DetailViewController.h; sourceTree = "<group>"; };
+		C7213ACC1BB4AFC9004F572D /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = APIHomework/DetailViewController.m; sourceTree = "<group>"; };
 		C7213ACE1BB4B035004F572D /* FourSquareEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourSquareEntry.h; sourceTree = "<group>"; };
 		C7213ACF1BB4B035004F572D /* FourSquareEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourSquareEntry.m; sourceTree = "<group>"; };
-		C7213AD11BB5E5CE004F572D /* MapAndLabelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAndLabelsViewController.h; sourceTree = "<group>"; };
-		C7213AD21BB5E5CE004F572D /* MapAndLabelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAndLabelsViewController.m; sourceTree = "<group>"; };
+		C7213AD11BB5E5CE004F572D /* MapAndLabelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapAndLabelsViewController.h; path = APIHomework/MapAndLabelsViewController.h; sourceTree = "<group>"; };
+		C7213AD21BB5E5CE004F572D /* MapAndLabelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapAndLabelsViewController.m; path = APIHomework/MapAndLabelsViewController.m; sourceTree = "<group>"; };
+		C7213AD41BB6EE41004F572D /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewController.h; path = APIHomework/WebViewController.h; sourceTree = "<group>"; };
+		C7213AD51BB6EE41004F572D /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewController.m; path = APIHomework/WebViewController.m; sourceTree = "<group>"; };
 		ED94C63A48268C54285BB6DA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +126,8 @@
 			children = (
 				C7213AC61BB4A34E004F572D /* QuartzCore.framework */,
 				C7213AC41BB4A346004F572D /* CoreLocation.framework */,
+				C7213AD71BB6F929004F572D /* MainViewControllerWithTableView */,
+				C7213AD81BB6F9D3004F572D /* MapsAndWebViewControllers */,
 				C7213A901BB4A028004F572D /* APIHomework */,
 				C7213AAA1BB4A028004F572D /* APIHomeworkTests */,
 				C7213AB51BB4A028004F572D /* APIHomeworkUITests */,
@@ -147,15 +152,9 @@
 			children = (
 				C7213A941BB4A028004F572D /* AppDelegate.h */,
 				C7213A951BB4A028004F572D /* AppDelegate.m */,
-				C7213A971BB4A028004F572D /* ViewController.h */,
-				C7213A981BB4A028004F572D /* ViewController.m */,
-				C7213ACB1BB4AFC9004F572D /* DetailViewController.h */,
-				C7213ACC1BB4AFC9004F572D /* DetailViewController.m */,
 				C7213ACE1BB4B035004F572D /* FourSquareEntry.h */,
 				C7213ACF1BB4B035004F572D /* FourSquareEntry.m */,
 				C7213A9A1BB4A028004F572D /* Main.storyboard */,
-				C7213AD11BB5E5CE004F572D /* MapAndLabelsViewController.h */,
-				C7213AD21BB5E5CE004F572D /* MapAndLabelsViewController.m */,
 				C7213AC81BB4A57C004F572D /* APImanager.h */,
 				C7213AC91BB4A57C004F572D /* APImanager.m */,
 				C7213A9D1BB4A028004F572D /* Assets.xcassets */,
@@ -190,6 +189,28 @@
 				C7213AB81BB4A028004F572D /* Info.plist */,
 			);
 			path = APIHomeworkUITests;
+			sourceTree = "<group>";
+		};
+		C7213AD71BB6F929004F572D /* MainViewControllerWithTableView */ = {
+			isa = PBXGroup;
+			children = (
+				C7213A971BB4A028004F572D /* ViewController.h */,
+				C7213A981BB4A028004F572D /* ViewController.m */,
+			);
+			name = MainViewControllerWithTableView;
+			sourceTree = "<group>";
+		};
+		C7213AD81BB6F9D3004F572D /* MapsAndWebViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C7213AD11BB5E5CE004F572D /* MapAndLabelsViewController.h */,
+				C7213AD21BB5E5CE004F572D /* MapAndLabelsViewController.m */,
+				C7213ACB1BB4AFC9004F572D /* DetailViewController.h */,
+				C7213ACC1BB4AFC9004F572D /* DetailViewController.m */,
+				C7213AD41BB6EE41004F572D /* WebViewController.h */,
+				C7213AD51BB6EE41004F572D /* WebViewController.m */,
+			);
+			name = MapsAndWebViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +384,7 @@
 				C7213ACD1BB4AFC9004F572D /* DetailViewController.m in Sources */,
 				C7213AD31BB5E5CE004F572D /* MapAndLabelsViewController.m in Sources */,
 				C7213ACA1BB4A57C004F572D /* APImanager.m in Sources */,
+				C7213AD61BB6EE42004F572D /* WebViewController.m in Sources */,
 				C7213A991BB4A028004F572D /* ViewController.m in Sources */,
 				C7213A961BB4A028004F572D /* AppDelegate.m in Sources */,
 				C7213A931BB4A028004F572D /* main.m in Sources */,
